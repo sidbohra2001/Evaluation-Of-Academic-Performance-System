@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        tools:layout_editor_absoluteX="20dp">
+
+        <TextView
+            android:id="@+id/allUnivRoll"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="2dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="10dp"
+            android:text="Univ Roll No."
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/allStudName"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="2dp"
+            android:background="@color/white"
+            android:capitalize="words"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="10dp"
+            android:text="Stud Name"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/allStudYear"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="10dp"
+            android:text="StudYear"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/allStudSec"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="10dp"
+            android:text="Stud Sec"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/allStudRoll"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="2dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:paddingHorizontal="10dp"
+            android:text="Stud Roll"
+            android:textAlignment="center"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

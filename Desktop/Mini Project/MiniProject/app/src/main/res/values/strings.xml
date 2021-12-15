@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Academic Evaluation System</string>
+    <string name="login_page"><u><b>LOGIN PAGE</b></u></string>
+    <string name="studentlogin">Students</string>
+    <string name="teacherlogin">Teachers</string>
+    <string name="login">LOGIN</string>
+    <string name="footer">powered by Android</string>
+    <string name="studentloginpage"><u><b>Student Login</b></u></string>
+    <string name="teacherloginpage"><u><b>Teacher Login</b></u></string>
+    <string name="studentcreateaccount"><u><b>Create A New Student Account</b></u></string>
+    <string name="teachercreateaccount"><u><b>Create A New Teacher Account</b></u></string>
+    <string name="title_activity_studentdeatils">studentdeatils</string>
+    <string name="action_settings">Settings</string>
+    <string name="student_details">Student Details</string>
+    <string name="selectYear">SELECT</string>
+    <string name="selectSec">SELECT</string>
+
+    <string-array name="year_arrays">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="section_arrays">
+        <item>A</item>
+        <item>B</item>
+    </string-array>
+</resources>
