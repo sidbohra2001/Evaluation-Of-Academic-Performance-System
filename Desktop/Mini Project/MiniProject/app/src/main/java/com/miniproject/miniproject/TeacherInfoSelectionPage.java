@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -26,7 +27,6 @@ public class TeacherInfoSelectionPage extends AppCompatActivity {
         yearSelection = findViewById(R.id.yearSelection);
         secSelection = findViewById(R.id.secSelection);
         allStudent = findViewById(R.id.allStudent);
-        secSelection.setVisibility(View.INVISIBLE);
         buttonSubmit = findViewById(R.id.buttonSubmit);
         buttonSubmit.setOnClickListener(new View.OnClickListener() {
 
@@ -34,6 +34,7 @@ public class TeacherInfoSelectionPage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading...", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(TeacherInfoSelectionPage.this, TeacherStudentView.class);
                 intent.putExtra("year",yearSelection.getSelectedItem().toString()); //Year is passed to the next page.
                 intent.putExtra("sec",secSelection.getSelectedItem().toString()); //Section is passed to the next page.
@@ -48,6 +49,7 @@ public class TeacherInfoSelectionPage extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Loading...", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(TeacherInfoSelectionPage.this, TeacherStudentView.class);
                 intent.putExtra("year",""); //Year is passed to the next page.
                 intent.putExtra("sec",""); //Section is passed to the next page.

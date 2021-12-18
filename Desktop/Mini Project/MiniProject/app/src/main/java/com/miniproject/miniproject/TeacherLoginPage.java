@@ -75,7 +75,7 @@ public class TeacherLoginPage extends AppCompatActivity {
                 @Override
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if(task.isSuccessful()){
-                        Toast.makeText(TeacherLoginPage.this, "Login Successful", Toast.LENGTH_LONG).show();
+                        Toast.makeText(TeacherLoginPage.this, "Login Successful", Toast.LENGTH_SHORT).show();
                         sendUserToNextActivity();
                     }
                     else{

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -98,6 +99,7 @@ public class LogsAdapter extends RecyclerView.Adapter<LogsAdapter.ViewHolder> {
 
             @Override
             public void onClick(View v) {
+                Toast.makeText(v.getContext(), "Loading...", Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(v.getContext(),ShowStudentDetails.class);
                 intent.putExtra("uniroll",localDataSet.get(position).getUnivRollNo()); //University Roll No. is passed to the next page.
                 intent.putExtra("from","Teacher"); //value passed to dignify the identity of parent page of the upcoming activity.

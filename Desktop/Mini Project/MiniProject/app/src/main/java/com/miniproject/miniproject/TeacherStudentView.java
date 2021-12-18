@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -32,7 +33,11 @@ public class TeacherStudentView extends AppCompatActivity {
         year = getIntent().getExtras().getString("year"); //Fetching year from the previous page.
         setContentView(R.layout.activity_teacher_student_view);
         recyclerView = findViewById(R.id.recycler_view);
-        readStudentDetails();
+        try {
+            readStudentDetails();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         SQLConvert teachersql = new SQLConvert(TeacherStudentView.this, "studDatabase", null, 1);
         if(sec.equals("") && year.equals("")){
             arrayList = teachersql.sinfo3();
@@ -45,7 +50,7 @@ public class TeacherStudentView extends AppCompatActivity {
         LogsAdapter logsAdapter = new LogsAdapter(arrayList);
         recyclerView.setAdapter(logsAdapter);
     }
-    protected void readStudentDetails() {
+    protected void readStudentDetails() throws IOException {
 
         //Reads and sends data to the database from students.csv file
 

@@ -21,7 +21,7 @@ public class StudentInfo {
 
     public StudentInfo(String univRollNo, String year, String roll, String sec, String fname, String name, String smobile, String fmobile, String maths, String english, String cse, String chemistry, String physics, String electronics, String electrical) {
 
-        //Parametric Constructr 1.
+        //Parametric Constructor 1.
 
         this.univRollNo = univRollNo;
         this.name = name;

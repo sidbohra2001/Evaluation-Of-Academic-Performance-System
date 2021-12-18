@@ -4,13 +4,13 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
@@ -97,7 +97,11 @@ public class ShowStudentDetails extends AppCompatActivity {
             MessageStudent.setVisibility(View.VISIBLE);
             contacts.setVisibility(View.VISIBLE);
         }
-        readStudentDetails();
+        try {
+            readStudentDetails();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         setValues(univRollNo);
     }
 
@@ -217,7 +221,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 65.79;
             String b = yearAverage.getText().toString()+av;
             yearAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -233,7 +237,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 65.24;
             String b = yearAverage.getText().toString()+av;
             yearAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -249,7 +253,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 63.74;
             String b = yearAverage.getText().toString()+av;
             yearAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -265,7 +269,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 63.95;
             String b = yearAverage.getText().toString()+av;
             yearAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -281,7 +285,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 62.71;
             String b = yearAverage.getText().toString()+av;
             yearAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -306,7 +310,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 65.59;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){ 
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -322,7 +326,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 65.99;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -338,7 +342,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 64.76;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -354,7 +358,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 65.73;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -370,7 +374,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 63.41;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -386,7 +390,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 64.07;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -402,7 +406,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 64.84;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -418,7 +422,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 63.05;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -434,7 +438,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 62.10;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -450,7 +454,7 @@ public class ShowStudentDetails extends AppCompatActivity {
             double av = 63.32;
             String b = secAverage.getText().toString()+av;
             secAverage.setText(b);
-            if(n < av - 10){
+            if(n < av - 5){
                 r.setText(bA);
                 r.setTextColor(Color.rgb(200,0,0));
             }
@@ -534,7 +538,7 @@ public class ShowStudentDetails extends AppCompatActivity {
         }
     }
 
-    protected void readStudentDetails() {
+    protected void readStudentDetails() throws IOException {
 
         //Reads student details from and forms a database from student.csv file.
 
